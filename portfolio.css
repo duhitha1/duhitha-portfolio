@@ -1,0 +1,258 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    color: #ededed;
+    background: #081B29;
+}
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #081B29;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header a
+{
+    color: #C770F0;
+}
+.logo
+{
+    position: relative;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.navbar a
+{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards ;
+}
+.navbar a:hover
+{
+    color: #0ef;
+}
+.home
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: #081B29 no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content
+{
+    max-width: 600px;
+}
+.home-content h3
+{
+    font-size: 46px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+}
+.home-content h1
+{
+    font-size: 46px;
+    font-weight: 500;
+    margin: -3px 0;
+    color: #C770F0;
+}
+.home-content p
+{
+
+    font-size: 20px;
+}
+.duhitha
+{
+    border-radius: none;
+}
+.resume
+{
+    background: #C770F0;
+    padding: 20px;
+}
+.home-icon a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #C770F0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #C770F0;
+    margin: 30px 15px 30px 0;
+    text-decoration: none;
+}
+.home-icon a:hover
+{
+    background: #C770F0;
+    color: #081b29;
+    box-shadow: 0 0  20px #C770F0;
+}
+.text
+{
+    color: #C770F0;
+}
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.about
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+    background: #081b29;
+}
+.duhitha1
+{
+    border-radius: 50%;
+    margin: 0 0 0 150px;
+}
+.about-text h2
+{
+    font-size: 40px;
+    font-weight: 500;
+}
+.about-text h2 span
+{
+    color: #C770F0;
+}
+.about-text h4
+{
+    font-size: 29px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.7;
+}
+.about-text p
+{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.skills
+{
+    background: #081B29;
+}
+.skills h2
+{
+    font-weight: 500;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+}
+.skill-heading
+{
+    color: #C770F0;
+    font-size: 40px;
+    padding-top:80px;
+    padding-left: 80px;
+    font-weight: 500;
+}
+.skillh1
+{
+    color: #C770F0;
+    font-weight: 500;
+    padding-top: 45px;
+    padding-left: 30px;
+    
+}
+.html, .css, .jquery, .Javascript, .python, .c, .bootstrap, .java, .dbms, .ai
+{
+    display: inline-block;
+    border: 1px solid #fff;
+    box-shadow: 0 0 10px #C770F0;
+    font-weight: 500;
+    margin: 30px;
+}
+.contact
+{
+    text-align: center;
+}
+.contact h2
+{
+    font-weight: 500;
+    font-size: 41px;
+    padding-top: 50px;
+}
+.contact h4
+{
+    font-size: 41px;
+}
+.resume
+{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #C770F0;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 40px;
+}
